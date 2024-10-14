@@ -1,0 +1,128 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    width: 30%; /* Increased width */
+    background-color: #343a40; /* Sidebar color */
+}
+
+.sidebar img {
+    transition: transform 0.3s;
+}
+
+.sidebar img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+.main-content {
+    margin-left: 30%; /* Match this with the sidebar width */
+    
+}
+.main-content,h1{
+    background-color: rgb(52,58,64);
+    
+    
+}
+
+
+h1, h3 {
+    text-align: center;
+}
+.section-title {
+    margin-top: 20px;
+    font-size: 24px;
+    border-bottom: 2px solid #2C3E50;
+}
+
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-item {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 10px;
+    width: calc(48% - 30px); /* Adjust width to fit two items per row */
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    margin-top: 20px;
+}
+
+
+.section-title {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.animated {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills li {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 3px;
+  }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.btn {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        height: auto;
+        width: 100%; /* Make full width on small screens */
+    }
+    .main-content {
+        margin-left: 0;
+    }
+}
